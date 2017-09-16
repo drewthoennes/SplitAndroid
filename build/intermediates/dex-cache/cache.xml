@@ -3,12 +3,57 @@
 
     <item
         is-multidex="true"
+        jar="/Users/drewthoennes/.android/build-cache/d8c355bf04cd90070c0b0517eba175983e0258f4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f1bcd19348c4d1effb80fa6d5e2ce44da254b6e8">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2ce84b7e1e74829f70642c6ed86e76bf01f734d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d2e5567927d6b73cb817cee03e40cd227b905a25">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a8075d76f86198ed3b509d6dd56fe487978301fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/drewthoennes/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_cfe6b09f9f9e3f6da0fd667e1d23c637c9e0d450/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/drewthoennes/.android/build-cache/4f104dfaf8ed967f63e7278bc678020292239bf8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fa2da36670cb89e63033b551822f74165aae0702">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_38b364b8d53c5e990a2cf7a1544f84242185979c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/drewthoennes/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
         <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/hamcrest-core-1.3_739bcb979300c02488cce4518b4e37045e1289c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/drewthoennes/.android/build-cache/b98e223668c55bca9beab1c3c30e14a8a61ce89c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3ecb9d2aad9a03dd8d0914b715cc1fc11d942c6c">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_080a6051927ef188d1b19c36b22c184639e0cc96/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,21 +66,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/drewthoennes/.android/build-cache/4b8d679a9847c08864c9f9fb93c5d1c18cb6020b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="646291c0aeb708a33a851e8afcf9a6d1fa0cef49">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_158ee8ebac27c094118c8e6b2a07fb4a2ec414fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/drewthoennes/.android/build-cache/fdb4ee1506bbb83dfd57fdbd6125e95e2a5f8f07/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0261a90a88c693d60d7d765d7133fef6ec712c1f">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1a1194ef7b9cb313bd7bb8b2aff3b3f7c30c2964/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/drewthoennes/.gradle/caches/modules-2/files-2.1/io.socket/engine.io-client/1.0.0/45fc6115750f06a9cd5dd71632cb7fc052cd66de/engine.io-client-1.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="45fc6115750f06a9cd5dd71632cb7fc052cd66de">
         <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/engine.io-client-1.0.0_055c9151ecb38240b5d8c0b6987a9d01eb3da5e5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="d2e5567927d6b73cb817cee03e40cd227b905a25">
-        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a8075d76f86198ed3b509d6dd56fe487978301fd/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,12 +111,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/drewthoennes/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jar="/Users/drewthoennes/.android/build-cache/abb0373bda3bc6962815fe1ec2d982725fd717e5/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_cfe6b09f9f9e3f6da0fd667e1d23c637c9e0d450/classes.dex" />
+        sha1="2bf08e690b0b1101131099542db44488cd1d5170">
+        <dex dex="/Users/drewthoennes/AndroidStudioProjects/Split/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f3cf6904061c2bf3db37e1ef7f167f68640c2229/classes.dex" />
     </item>
     <item
         is-multidex="true"

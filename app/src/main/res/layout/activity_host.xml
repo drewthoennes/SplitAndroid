@@ -40,7 +40,8 @@
         android:id="@+id/startButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:text="Start group"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="center|bottom"/>
 
 </LinearLayout>

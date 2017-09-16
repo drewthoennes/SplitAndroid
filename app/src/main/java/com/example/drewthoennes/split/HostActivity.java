@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import io.socket.client.IO;
@@ -20,6 +22,8 @@ public class HostActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_host);
 
         getIntent();
@@ -34,13 +38,11 @@ public class HostActivity extends AppCompatActivity {
 
         socket.on("roomCreated", new Emitter.Listener() {
             public void call(Object... args) {
+                //socket.disconnect();
+                socket.close();
                 String data = (String)args[0];
                 roomCode = data;
                 Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
-                //intent.putExtra("Var", "My string value");
-                //Bundle bundle = new Bundle();
-                //bundle.putParcelable("Socket", socket);
-                //intent.putExtras(bundle);
                 intent.putExtra("roomCode", roomCode);
                 startActivity(intent);
             }
@@ -64,6 +66,7 @@ public class HostActivity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 socket.emit("createRoom");
+                startButton.setEnabled(false);
             }
         });
     }
