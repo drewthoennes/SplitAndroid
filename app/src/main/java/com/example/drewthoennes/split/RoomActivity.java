@@ -10,8 +10,7 @@ import android.widget.TextView;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import io.socket.parser.Parser;
-import io.socket.*;
+//import io.socket.IOAcknowledge;
 
 
 /**
@@ -29,7 +28,7 @@ public class RoomActivity extends AppCompatActivity {
         setContentView(R.layout.activity_room);
 
         try {
-            socket = IO.socket("http://elnardu.me");
+            socket = IO.socket("http://elnardu.me/wsac");
         } catch(Exception exception) {
             Log.e("Error", exception.getMessage()); // Temporary, shoud be removed in final release
             System.exit(0);
@@ -48,7 +47,6 @@ public class RoomActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     public String getAccessCode() {
@@ -56,9 +54,9 @@ public class RoomActivity extends AppCompatActivity {
         return "ROFL";
     }
 
-    public void connectToRemote() {
-        socket.emit("message", "Hello from Android Studio");
-    }
+//    public void onMessage(String data, IOAcknowledge ack) {
+//        System.out.println("Server said " + data);
+//    }
 
 
 }
