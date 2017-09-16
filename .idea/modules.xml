@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Split.iml" filepath="$PROJECT_DIR$/Split.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/engine.io-client-java/engine.io-client-java.iml" filepath="$PROJECT_DIR$/libs/engine.io-client-java/engine.io-client-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/socket.io-client-java/socket.io-client-java.iml" filepath="$PROJECT_DIR$/libs/socket.io-client-java/socket.io-client-java.iml" />
     </modules>
   </component>
 </project>

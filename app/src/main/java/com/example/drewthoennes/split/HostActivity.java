@@ -2,24 +2,21 @@ package com.example.drewthoennes.split;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class HostActivity extends AppCompatActivity {
 
-    Button backButton;
-    TextView hostAccessCode;
+    private Button backButton;
+    private Button startButton;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host);
-
-        hostAccessCode = (TextView) findViewById(R.id.hostAccessCode);
-        hostAccessCode.setText(createAccessCode());
 
         getIntent();
 
@@ -31,10 +28,17 @@ public class HostActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
 
-    public String createAccessCode() {
-        // Check open strings with server
-        return "ROFL";
+        startButton = (Button) findViewById(R.id.startButton);
+        startButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
+                //intent.putExtra("Var", "My string value");
+                Bundle bundle = new Bundle();
+                //bundle.putParcelable("Socket", (Parcelable) socket);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 }
