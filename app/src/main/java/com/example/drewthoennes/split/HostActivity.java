@@ -32,16 +32,22 @@ public class HostActivity extends AppCompatActivity {
         }
         socket.connect();
 
-        socket.emit("createRoom");
-
         socket.on("roomCreated", new Emitter.Listener() {
             public void call(Object... args) {
                 String data = (String)args[0];
                 roomCode = data;
+                Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
+                //intent.putExtra("Var", "My string value");
+                //Bundle bundle = new Bundle();
+                //bundle.putParcelable("Socket", socket);
+                //intent.putExtras(bundle);
+                intent.putExtra("roomCode", roomCode);
+                startActivity(intent);
             }
         }).on(Socket.EVENT_ERROR, new Emitter.Listener() {
             public void call(Object... args) {
                 Exception err = (Exception)args[0];
+                Log.e("Error", err.getMessage());
             }
         });
 
@@ -57,13 +63,7 @@ public class HostActivity extends AppCompatActivity {
         startButton = (Button) findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
-                //intent.putExtra("Var", "My string value");
-                //Bundle bundle = new Bundle();
-                //bundle.putParcelable("Socket", socket);
-                //intent.putExtras(bundle);
-                intent.putExtra("roomCode", roomCode);
-                startActivity(intent);
+                socket.emit("createRoom");
             }
         });
     }
