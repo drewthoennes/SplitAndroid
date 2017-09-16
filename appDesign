@@ -1,0 +1,22 @@
+Landing page:
+- Two tabs
+	* Host a Split or Join a Split
+
+Host page:
+- Generates a code
+	* Four uppercase letters
+- Instructions on how to join the Split
+
+Join page:
+- Code field
+- Submit button
+
+Lobby page:
+- Shows host
+- Shows joiners
+- Shows video and length
+
+Vido page:
+- One tap pausese
+- Two taps opens overlaying interface (like Youtubes)
+- Background has multicolored bars to help users orient devices

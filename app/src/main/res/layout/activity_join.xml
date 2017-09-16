@@ -9,15 +9,28 @@
     tools:context="com.example.drewthoennes.split.LandingActivity">
 
     <Button
-        android:id="@+id/hostButton"
+        android:id="@+id/backButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Host a Stretch"/>
+        android:text="Back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Activity"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Access Code"
+        android:inputType="textCapCharacters"
+        android:maxLength="4"
+        android:imeOptions="actionDone" />
 
     <Button
-        android:id="@+id/joinButton"
+        android:id="@+id/joinGroupButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Join a Stretch"/>
+        android:text="Join group"/>
 
 </LinearLayout>

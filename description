@@ -1,0 +1,12 @@
+Platform: Android
+Languages: Java, JavaScript, node.js
+How: Host, download video, get dimensions, scale video, send video
+Goals: 
+- 1: Check splitting and transcoding between devices
+- 2: Two screens and then three
+
+Carl: Algorithm to figure out how to arrange phones in the best way
+Drew: Design of the app, supply dimensions and range
+Elnard: Backend work
+
+Problem: Now allowed connections between clients
