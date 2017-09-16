@@ -37,7 +37,12 @@ public class RoomActivity extends AppCompatActivity {
         socket.emit("echo", "hello");
 
         hostAccessCode = (TextView) findViewById(R.id.hostAccessCode);
-        hostAccessCode.setText(getAccessCode());
+        if(getIntent().getStringExtra("roomCode").toString() != null) {
+            hostAccessCode.setText(getIntent().getStringExtra("roomCode").toString());
+        }
+        else {
+            hostAccessCode.setText("Couldn't find access code");
+        }
 
         endButton = (Button) findViewById(R.id.endButton);
         endButton.setOnClickListener(new View.OnClickListener() {
