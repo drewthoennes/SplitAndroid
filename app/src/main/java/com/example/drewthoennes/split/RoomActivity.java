@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
+import io.socket.parser.Parser;
+import io.socket.*;
+
 
 /**
  * Created by drewthoennes on 9/16/17.
@@ -19,38 +22,43 @@ public class RoomActivity extends AppCompatActivity {
 
     Button endButton;
     TextView hostAccessCode;
-    private Socket socket;
-    {
-        try {
-            socket = IO.socket("localhost:8080");
-        } catch(Exception exception) {
-            Log.e("Error", exception.getMessage());
-        }
-    }
+    Socket socket;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room);
 
+        try {
+            socket = IO.socket("http://elnardu.me");
+        } catch(Exception exception) {
+            Log.e("Error", exception.getMessage()); // Temporary, shoud be removed in final release
+            System.exit(0);
+        }
         socket.connect();
+        socket.emit("echo", "hello");
 
         hostAccessCode = (TextView) findViewById(R.id.hostAccessCode);
-        hostAccessCode.setText(createAccessCode());
-
-        //hostAccessCode.setText(getIntent().getStringExtra("Var"));
+        hostAccessCode.setText(getAccessCode());
 
         endButton = (Button) findViewById(R.id.endButton);
         endButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), LandingActivity.class);
+                socket.close();
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 
-    public String createAccessCode() {
+    public String getAccessCode() {
         // Query for unused access codes
         return "ROFL";
     }
+
+    public void connectToRemote() {
+        socket.emit("message", "Hello from Android Studio");
+    }
+
 
 }
