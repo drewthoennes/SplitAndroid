@@ -13,8 +13,7 @@
         android:id="@+id/toolbarLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/endButton"
@@ -26,12 +25,12 @@
 
     <LinearLayout
         android:id="@+id/accessCodeLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="30dp"
-        android:layout_below="@id/toolbarLayout">
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,15 +51,15 @@
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="275dp"
+    <LinearLayout
+        android:id="@+id/userCountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:paddingTop="30dp"
         android:layout_below="@id/accessCodeLayout"
-        android:layout_alignParentBottom="true">
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingTop="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -79,7 +78,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"/>
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/startVideoButton"

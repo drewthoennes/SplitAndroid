@@ -10,6 +10,7 @@
     tools:context="com.example.drewthoennes.split.HomeActivity">
 
     <LinearLayout
+        android:id="@+id/toolbarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -25,17 +26,19 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:src="@drawable/youtube_logo" />
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbarLayout">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:text="Get video"
-        android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:src="@drawable/youtube_logo" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Get video"
+            android:gravity="center"/>
 
     </LinearLayout>
 
