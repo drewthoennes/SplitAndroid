@@ -45,6 +45,7 @@ public class RoomActivity extends AppCompatActivity {
     String roomCode;
     String userId;
     Boolean host;
+    String link;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +70,7 @@ public class RoomActivity extends AppCompatActivity {
         }
 
         host = getIntent().getExtras().getBoolean("host");
+        link = getIntent().getStringExtra("link").toString();
 
         try {
             socket = IO.socket("http://elnardu.me/" + roomCode);
@@ -77,6 +79,10 @@ public class RoomActivity extends AppCompatActivity {
             System.exit(0);
         }
         socket.connect();
+
+        if(!link.equals("")) {
+            socket.emit("download", link);
+        }
 
         // Send dimensions
         JSONObject settings = new JSONObject();
@@ -135,7 +141,12 @@ public class RoomActivity extends AppCompatActivity {
         startVideoButton.setOnClickListener(new View.OnClickListener() {
            public void onClick(View view) {
                startVideoButton.setEnabled(false);
-               socket.emit("prepare");
+               if(!link.equals("")) {
+                   socket.emit("prepare", "youtube");
+               }
+               else {
+                   socket.emit("prepare", "demo");
+               }
            }
         });
 

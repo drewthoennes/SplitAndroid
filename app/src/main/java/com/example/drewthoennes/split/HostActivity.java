@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -20,6 +21,7 @@ public class HostActivity extends AppCompatActivity {
     Socket socket;
     String roomCode;
     Boolean host = true;
+    EditText youtubeText;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,8 @@ public class HostActivity extends AppCompatActivity {
         }
         socket.connect();
 
+        youtubeText = (EditText) findViewById(R.id.youtubeText);
+
         socket.on("roomCreated", new Emitter.Listener() {
             public void call(Object... args) {
                 socket.close();
@@ -45,6 +49,7 @@ public class HostActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
                 intent.putExtra("roomCode", roomCode);
                 intent.putExtra("host", host);
+                intent.putExtra("link", youtubeText.getText().toString());
                 startActivity(intent);
             }
         }).on(Socket.EVENT_ERROR, new Emitter.Listener() {
