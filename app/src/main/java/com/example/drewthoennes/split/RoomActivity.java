@@ -135,48 +135,10 @@ public class RoomActivity extends AppCompatActivity {
         startVideoButton.setOnClickListener(new View.OnClickListener() {
            public void onClick(View view) {
                socket.emit("prepare");
-               play();
+               Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
+               intent.putExtra("userId", userId);
+               startActivity(intent);
            }
         });
     }
-
-    public void play() {
-        Handler handler = new Handler();
-        // Measures bandwidth during playback. Can be null if not required.
-        BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
-        TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(bandwidthMeter);
-        TrackSelector trackSelector = new DefaultTrackSelector(videoTrackSelectionFactory);
-        SimpleExoPlayer player = ExoPlayerFactory.newSimpleInstance(this, trackSelector);
-        player_view.setPlayer(player);
-        player_view.setVisibility(View.VISIBLE);
-        // Produces DataSource instances through which media data is loaded.
-        DataSource.Factory dataSourceFactory = new DefaultDataSourceFactory(this, Util.getUserAgent(this, ""), null);
-        // Produces Extractor instances for parsing the media data.
-        ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
-        HlsMediaSource hlsMediaSource = new HlsMediaSource(Uri.parse("http://elnardu.me/stream/" + userId + "/output.m3u8"), dataSourceFactory, handler, new AdaptiveMediaSourceEventListener() {
-            @Override
-            public void onLoadStarted(DataSpec dataSpec, int dataType, int trackType, Format trackFormat, int trackSelectionReason, Object trackSelectionData, long mediaStartTimeMs, long mediaEndTimeMs, long elapsedRealtimeMs) {
-            }
-            @Override
-            public void onLoadCompleted(DataSpec dataSpec, int dataType, int trackType, Format trackFormat, int trackSelectionReason, Object trackSelectionData, long mediaStartTimeMs, long mediaEndTimeMs, long elapsedRealtimeMs, long loadDurationMs, long bytesLoaded) {
-            }
-            @Override
-            public void onLoadCanceled(DataSpec dataSpec, int dataType, int trackType, Format trackFormat, int trackSelectionReason, Object trackSelectionData, long mediaStartTimeMs, long mediaEndTimeMs, long elapsedRealtimeMs, long loadDurationMs, long bytesLoaded) {
-            }
-            @Override
-            public void onLoadError(DataSpec dataSpec, int dataType, int trackType, Format trackFormat, int trackSelectionReason, Object trackSelectionData, long mediaStartTimeMs, long mediaEndTimeMs, long elapsedRealtimeMs, long loadDurationMs, long bytesLoaded, IOException error, boolean wasCanceled) {
-            }
-            @Override
-            public void onUpstreamDiscarded(int trackType, long mediaStartTimeMs, long mediaEndTimeMs) {
-            }
-            @Override
-            public void onDownstreamFormatChanged(int trackType, Format trackFormat, int trackSelectionReason, Object trackSelectionData, long mediaTimeMs) {
-            }
-        });
-
-        player.prepare(hlsMediaSource);
-        player_view.requestFocus();
-        player.setPlayWhenReady(true);
-    }
-
 }

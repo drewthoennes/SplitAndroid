@@ -22,6 +22,7 @@
         <activity android:name=".HostActivity"></activity>
         <activity android:name=".JoinActivity"></activity>
         <activity android:name=".RoomActivity"></activity>
+        <activity android:name=".VideoActivity"></activity>
     </application>
 
 </manifest>
