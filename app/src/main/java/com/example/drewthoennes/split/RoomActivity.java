@@ -126,7 +126,6 @@ public class RoomActivity extends AppCompatActivity {
         }).on(Socket.EVENT_ERROR, new Emitter.Listener() {
             public void call(Object... args) {
                 Exception err = (Exception) args[0];
-                Log.e("Error", err.getMessage());
             }
         });
 
@@ -165,6 +164,7 @@ public class RoomActivity extends AppCompatActivity {
     public void play() {
         Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
         intent.putExtra("userId", userId);
+        intent.putExtra("roomCode", roomCode);
         RoomActivity.this.runOnUiThread(new Runnable() {
             public void run() {
                 startVideoButton.setEnabled(true);
