@@ -57,6 +57,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:paddingTop="30dp"
+        android:background="@drawable/landing_faded"
         android:layout_below="@id/accessCodeLayout">
 
         <TextView
@@ -67,6 +68,7 @@
             android:textSize="32dp"/>
 
         <TextView
+            android:id="@+id/countUsersText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"

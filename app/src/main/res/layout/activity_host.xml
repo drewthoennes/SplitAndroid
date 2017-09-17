@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@drawable/landing_faded"
     tools:context="com.example.drewthoennes.split.HomeActivity">
 
     <LinearLayout

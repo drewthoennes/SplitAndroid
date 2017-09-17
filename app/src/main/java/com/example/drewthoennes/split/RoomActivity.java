@@ -14,29 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.android.exoplayer2.ExoPlayerFactory;
-import com.google.android.exoplayer2.Format;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
-import com.google.android.exoplayer2.extractor.ExtractorsFactory;
-import com.google.android.exoplayer2.source.AdaptiveMediaSourceEventListener;
-import com.google.android.exoplayer2.source.ExtractorMediaSource;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.source.hls.HlsMediaSource;
-import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
-import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
-import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
-import com.google.android.exoplayer2.upstream.BandwidthMeter;
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.DataSpec;
-import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
-import com.google.android.exoplayer2.util.Util;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -44,10 +27,9 @@ import io.socket.emitter.Emitter;
 
 import org.json.*;
 
-import java.io.IOException;
+import java.util.ArrayList;
 
 import static com.example.drewthoennes.split.R.layout.activity_room;
-
 
 /**
  * Created by drewthoennes on 9/16/17.
@@ -58,9 +40,11 @@ public class RoomActivity extends AppCompatActivity {
     Button endButton;
     Button startVideoButton;
     TextView hostAccessCode;
+    TextView countUsersText;
     Socket socket;
-    String roomCode; // Implement this
+    String roomCode;
     String userId;
+    Boolean host;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +52,7 @@ public class RoomActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(activity_room);
 
+        // Get screen dimensions
         Display display = getWindowManager().getDefaultDisplay();
         DisplayMetrics displayMetrics = new DisplayMetrics();
         display.getMetrics(displayMetrics);
@@ -83,14 +68,17 @@ public class RoomActivity extends AppCompatActivity {
             roomCode = "";
         }
 
+        host = getIntent().getExtras().getBoolean("host");
+
         try {
             socket = IO.socket("http://elnardu.me/" + roomCode);
         } catch(Exception exception) {
             Log.e("Error", exception.getMessage()); // Temporary, shoud be removed in final release
-            //System.exit(0);
+            System.exit(0);
         }
         socket.connect();
 
+        // Send dimensions
         JSONObject settings = new JSONObject();
         try {
             settings.put("width", screenWidth);
@@ -101,12 +89,28 @@ public class RoomActivity extends AppCompatActivity {
             exception.printStackTrace();
         }
 
+        countUsersText = (TextView) findViewById(R.id.countUsersText);
+
         socket.emit("join", settings);
 
         socket.on("joinAccepted", new Emitter.Listener() {
             public void call(Object... args) {
                 String data = (String) args[0];
                 userId = data;
+            }
+        }).on("prepare", new Emitter.Listener() {
+            public void call(Object... args) {
+                play();
+            }
+        }).on("usersCount", new Emitter.Listener() {
+            public void call(Object... args) {
+                final String data = (String) args[0];
+                RoomActivity.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        countUsersText.setText(data);
+                    }
+                });
             }
         }).on(Socket.EVENT_ERROR, new Emitter.Listener() {
             public void call(Object... args) {
@@ -130,11 +134,27 @@ public class RoomActivity extends AppCompatActivity {
         startVideoButton = (Button) findViewById(R.id.startVideoButton);
         startVideoButton.setOnClickListener(new View.OnClickListener() {
            public void onClick(View view) {
+               startVideoButton.setEnabled(false);
                socket.emit("prepare");
-               Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
-               intent.putExtra("userId", userId);
-               startActivity(intent);
            }
         });
+
+        if(!host) {
+            startVideoButton.setVisibility(View.INVISIBLE);
+            startVideoButton.setEnabled(false);
+        }
+
+    }
+
+    public void play() {
+        Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
+        intent.putExtra("userId", userId);
+        RoomActivity.this.runOnUiThread(new Runnable() {
+            public void run() {
+                startVideoButton.setEnabled(true);
+            }
+        });
+        startActivity(intent);
+
     }
 }

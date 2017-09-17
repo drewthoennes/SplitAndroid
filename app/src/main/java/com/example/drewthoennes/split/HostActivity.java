@@ -15,10 +15,11 @@ import io.socket.emitter.Emitter;
 
 public class HostActivity extends AppCompatActivity {
 
-    private Button backButton;
-    private Button startButton;
-    private Socket socket;
-    private String roomCode;
+    Button backButton;
+    Button startButton;
+    Socket socket;
+    String roomCode;
+    Boolean host = true;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,18 +33,18 @@ public class HostActivity extends AppCompatActivity {
             socket = IO.socket("http://elnardu.me");
         } catch(Exception exception) {
             Log.e("Error", exception.getMessage()); // Temporary, shoud be removed in final release
-            System.exit(0);
+            //System.exit(0);
         }
         socket.connect();
 
         socket.on("roomCreated", new Emitter.Listener() {
             public void call(Object... args) {
-                //socket.disconnect();
                 socket.close();
                 String data = (String)args[0];
                 roomCode = data;
                 Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
                 intent.putExtra("roomCode", roomCode);
+                intent.putExtra("host", host);
                 startActivity(intent);
             }
         }).on(Socket.EVENT_ERROR, new Emitter.Listener() {

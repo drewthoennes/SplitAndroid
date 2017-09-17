@@ -12,16 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity android:name=".HomeActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HostActivity"></activity>
-        <activity android:name=".JoinActivity"></activity>
-        <activity android:name=".RoomActivity"></activity>
+        <activity android:name=".HostActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".JoinActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".RoomActivity" android:screenOrientation="portrait"></activity>
         <activity android:name=".VideoActivity"></activity>
     </application>
 

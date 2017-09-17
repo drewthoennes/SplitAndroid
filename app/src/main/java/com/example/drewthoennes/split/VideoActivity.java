@@ -38,6 +38,7 @@ public class VideoActivity extends AppCompatActivity {
     private Button hostButton;
     private Button joinButton;
     SimpleExoPlayerView player_view;
+    SimpleExoPlayer player;
     String userId;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +60,7 @@ public class VideoActivity extends AppCompatActivity {
         BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
         TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(bandwidthMeter);
         TrackSelector trackSelector = new DefaultTrackSelector(videoTrackSelectionFactory);
-        SimpleExoPlayer player = ExoPlayerFactory.newSimpleInstance(this, trackSelector);
+        player = ExoPlayerFactory.newSimpleInstance(this, trackSelector);
         player_view.setPlayer(player);
         DataSource.Factory dataSourceFactory = new DefaultDataSourceFactory(this, Util.getUserAgent(this, ""), null);
         ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
@@ -86,6 +87,11 @@ public class VideoActivity extends AppCompatActivity {
         player.prepare(hlsMediaSource);
         player_view.requestFocus();
         player.setPlayWhenReady(true);
+    }
+
+    public void onPause() {
+        super.onPause();
+        player.release();
     }
 
 }
