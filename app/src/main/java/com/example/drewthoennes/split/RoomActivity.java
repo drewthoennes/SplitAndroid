@@ -70,13 +70,18 @@ public class RoomActivity extends AppCompatActivity {
         }
 
         host = getIntent().getExtras().getBoolean("host");
-        link = getIntent().getStringExtra("link").toString();
+        if(getIntent().getStringExtra("link") != null) {
+            link = getIntent().getStringExtra("link").toString();
+        }
+        else {
+            link = "";
+        }
 
         try {
             socket = IO.socket("http://elnardu.me/" + roomCode);
         } catch(Exception exception) {
             Log.e("Error", exception.getMessage()); // Temporary, shoud be removed in final release
-            System.exit(0);
+            //System.exit(0);
         }
         socket.connect();
 
