@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@drawable/landing_faded"
     tools:context="com.example.drewthoennes.split.HomeActivity">
 
     <LinearLayout
@@ -51,14 +52,15 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="275dp"
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:paddingTop="30dp"
-        android:background="@drawable/landing_faded"
-        android:layout_below="@id/accessCodeLayout">
+        android:layout_below="@id/accessCodeLayout"
+        android:layout_alignParentBottom="true">
 
         <TextView
             android:layout_width="wrap_content"
@@ -77,7 +79,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <Button
         android:id="@+id/startVideoButton"
