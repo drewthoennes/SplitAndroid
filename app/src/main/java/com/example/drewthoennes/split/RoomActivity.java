@@ -14,12 +14,29 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.SimpleExoPlayer;
+import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
+import com.google.android.exoplayer2.extractor.ExtractorsFactory;
+import com.google.android.exoplayer2.source.AdaptiveMediaSourceEventListener;
+import com.google.android.exoplayer2.source.ExtractorMediaSource;
+import com.google.android.exoplayer2.source.MediaSource;
+import com.google.android.exoplayer2.source.hls.HlsMediaSource;
+import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
+import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
+import com.google.android.exoplayer2.trackselection.TrackSelection;
+import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
+import com.google.android.exoplayer2.upstream.BandwidthMeter;
+import com.google.android.exoplayer2.upstream.DataSource;
+import com.google.android.exoplayer2.upstream.DataSpec;
+import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
+import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
+import com.google.android.exoplayer2.util.Util;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -27,9 +44,10 @@ import io.socket.emitter.Emitter;
 
 import org.json.*;
 
-import java.util.ArrayList;
+import java.io.IOException;
 
 import static com.example.drewthoennes.split.R.layout.activity_room;
+
 
 /**
  * Created by drewthoennes on 9/16/17.
@@ -41,9 +59,8 @@ public class RoomActivity extends AppCompatActivity {
     Button startVideoButton;
     TextView hostAccessCode;
     Socket socket;
-    String roomCode;
+    String roomCode; // Implement this
     String userId;
-    SimpleExoPlayerView player_view;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +68,6 @@ public class RoomActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(activity_room);
 
-        // Get screen dimensions
         Display display = getWindowManager().getDefaultDisplay();
         DisplayMetrics displayMetrics = new DisplayMetrics();
         display.getMetrics(displayMetrics);
@@ -59,9 +75,6 @@ public class RoomActivity extends AppCompatActivity {
         final int screenWidth = displayMetrics.widthPixels;
         final int xDpi = (int) displayMetrics.xdpi;
         final int yDpi = (int) displayMetrics.ydpi;
-
-        player_view = (SimpleExoPlayerView) findViewById(R.id.player_view);
-        player_view.setVisibility(View.INVISIBLE);
 
         if(getIntent().getStringExtra("roomCode").toString() != null) {
             roomCode = getIntent().getStringExtra("roomCode").toString();
@@ -74,11 +87,10 @@ public class RoomActivity extends AppCompatActivity {
             socket = IO.socket("http://elnardu.me/" + roomCode);
         } catch(Exception exception) {
             Log.e("Error", exception.getMessage()); // Temporary, shoud be removed in final release
-            System.exit(0);
+            //System.exit(0);
         }
         socket.connect();
 
-        // Send dimensions
         JSONObject settings = new JSONObject();
         try {
             settings.put("width", screenWidth);
@@ -103,7 +115,6 @@ public class RoomActivity extends AppCompatActivity {
             }
         });
 
-        // Set access code
         hostAccessCode = (TextView) findViewById(R.id.hostAccessCode);
         hostAccessCode.setText(roomCode);
 
@@ -125,6 +136,5 @@ public class RoomActivity extends AppCompatActivity {
                startActivity(intent);
            }
         });
-
     }
 }
