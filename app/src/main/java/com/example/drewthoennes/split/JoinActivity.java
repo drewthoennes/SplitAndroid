@@ -70,13 +70,11 @@ public class JoinActivity extends AppCompatActivity {
         // Label above edit text
         joinAccessCodeLabel = (TextView) findViewById(R.id.joinAccessCodeLabel);
         joinAccessCodeLabel.setTextColor(Color.WHITE);
-        joinAccessCodeLabel.setHintTextColor(Color.WHITE);
-        joinAccessCodeLabel.setCursorVisible(false);
-        joinAccessCodeLabel.requestFocus();
 
         // Edit text for access code
         joinAccessCode = (com.beardedhen.androidbootstrap.BootstrapEditText) findViewById(R.id.joinAccessCode);
         joinAccessCode.setRounded(true);
+        joinAccessCode.requestFocus();
         // Only allows the join button to be pressed when the length is equal to four
         joinAccessCode.addTextChangedListener(new TextWatcher() {
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}

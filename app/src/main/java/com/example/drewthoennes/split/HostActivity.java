@@ -1,6 +1,8 @@
 package com.example.drewthoennes.split;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -9,6 +11,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -16,12 +20,20 @@ import io.socket.emitter.Emitter;
 
 public class HostActivity extends AppCompatActivity {
 
-    Button backButton;
-    Button startButton;
+    RelativeLayout activity_host_top;
+    RelativeLayout titleBar;
+    TextView timesIcon;
+    TextView settingsIcon;
+    TextView urlLabel;
+    com.beardedhen.androidbootstrap.BootstrapButton startButton;
+    com.beardedhen.androidbootstrap.BootstrapEditText youtubeText;
+
     Socket socket;
     String roomCode;
     Boolean host = true;
-    EditText youtubeText;
+
+    Typeface iconFont;
+    FontManager fontManager;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +41,34 @@ public class HostActivity extends AppCompatActivity {
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_host);
+
+        iconFont = FontManager.getTypeface(getApplicationContext(), FontManager.FONTAWESOME);
+        fontManager.markAsIconContainer(findViewById(R.id.times_icon), iconFont);
+        fontManager.markAsIconContainer(findViewById(R.id.settings_icon), iconFont);
+
+        activity_host_top = (RelativeLayout) findViewById(R.id.activity_host_top);
+        activity_host_top.setBackgroundColor(Color.parseColor("#1477d5"));
+
+        titleBar = (RelativeLayout) findViewById(R.id.titleBar);
+        titleBar.setBackgroundColor(Color.parseColor("#282828"));
+
+        timesIcon = (TextView) findViewById(R.id.times_icon);
+        timesIcon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent homeIntent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(homeIntent);
+            }
+        });
+
+        settingsIcon = (TextView) findViewById(R.id.settings_icon);
+        settingsIcon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+            }
+        });
+
+        urlLabel = (TextView) findViewById(R.id.urlLabel);
+        urlLabel.setTextColor(Color.WHITE);
 
         getIntent();
 
@@ -41,7 +81,7 @@ public class HostActivity extends AppCompatActivity {
         }
         socket.connect();
 
-        youtubeText = (EditText) findViewById(R.id.youtubeText);
+        youtubeText = (com.beardedhen.androidbootstrap.BootstrapEditText) findViewById(R.id.youtubeText);
 
         socket.on("roomCreated", new Emitter.Listener() {
             public void call(Object... args) {
@@ -61,15 +101,7 @@ public class HostActivity extends AppCompatActivity {
             }
         });
 
-        backButton = (Button) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent homeIntent = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(homeIntent);
-            }
-        });
-
-        startButton = (Button) findViewById(R.id.startButton);
+        startButton = (com.beardedhen.androidbootstrap.BootstrapButton) findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 socket.emit("createRoom");

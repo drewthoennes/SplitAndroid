@@ -10,187 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879d0ebb-e8a2-429d-bafe-ed98833a1c1c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/stretch_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-09-17-12-16-32-700.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-09-17-12-17-13-829.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-10-08-12-41-34-342.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-10-08-12-42-11-365.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-10-08-12-42-13-956.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-10-08-13-50-16-564.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-10-08-13-52-38-768.rawproto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/awesome_text_view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_button_group.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_circle_thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_dropdown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_edit_text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_label.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_progress_bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_progress_bar_group.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/images/bootstrap_well.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/author.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/author_small.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/caterpillar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/daffodil_large.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/flower.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/ladybird.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/landscape_image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/perfect_square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/portrait_image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/small_daffodils.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/drawable/stars.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/androidbootstrap_2_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/FontManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/anim/left_slide_in.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/anim/left_slide_out.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/anim/right_slide_in.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/anim/right_slide_out.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/icons.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/ADD_FONT.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/proguard-project.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/push.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/assets/MaterialIcons-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/assets/fontawesome-webfont-v470.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/assets/typicons-v207.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/AwesomeTextView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BetaApi.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapAlert.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBadge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBaseThumbnail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapButtonGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapCircleThumbnail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapDrawableFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapDropDown.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapEditText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapLabel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapProgressBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapProgressBarGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapThumbnail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapWell.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/IconResolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/TypefaceProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapHeading.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/ViewGroupPosition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/ButtonMode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapHeading.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapSize.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/ExpandDirection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BadgeContainerView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBadgeView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBrandView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapHeadingView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapSizeView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapTextView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BorderView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/ButtonModeView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/OutlineableView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/ProgressView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/RoundableView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/AwesomeTypefaceSpan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/FontAwesome.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/IconSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/MaterialIcons.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/Typicon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/DimenUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/DrawableUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ViewUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/res/values/attrs_font_awesome.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/res/values/attrs_materialIcon.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/res/values/attrs_typicons.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/AndroidBootstrap/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/TODO.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/circle.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/gradle.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/AwesomeTextViewExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BaseActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapAlertExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapBadgeExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapButtonExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapButtonGroupExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapCircleThumbnailExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapDropDownExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapEditTextExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapLabelExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapProgressBarExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapProgressBarGroupExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapThumbnailExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/BootstrapWellExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/CustomBootstrapStyle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/HomeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/java/com/fractalwrench/androidbootstrap/sample/SampleApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/activity_base.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_awesome_text_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_alert.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_badge.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_button.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_button_group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_circle_thumbnail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_dropdown.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_edit_text_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_label.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_progress_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_progress_bar_group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_thumbnail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/layout/example_bootstrap_well.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/sample/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Android-Bootstrap/settings.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/landing.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/landing.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HomeActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HostActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HostActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/JoinActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/JoinActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/RoomActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/RoomActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_host.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_host.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_join.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_join.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_room.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_room.xml" />
     </list>
     <ignored path="Split.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -223,7 +56,57 @@
     <favorites_list name="Split" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="HostActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HostActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_host.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_host.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="88" column="65" selection-start-line="88" selection-start-column="65" selection-end-line="88" selection-end-column="65" />
+              <folding>
+                <element signature="e#1408#1426#0" expanded="true" />
+                <element signature="e#2365#2381#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JoinActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/JoinActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_join.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_join.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10">
+              <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -2883,8 +2766,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_video.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_host.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/VideoActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/FontManager.java" />
@@ -2897,9 +2778,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/anim/right_slide_out.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/RoomActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HostActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_join.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HostActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/JoinActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_host.xml" />
       </list>
     </option>
   </component>
@@ -2932,9 +2815,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3038,13 +2918,16 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="4965f1e4" />
+    <property name="device.picker.selection" value="04349b9213b6fc70" />
     <property name="android.project.structure.last.selected" value="libs" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="FullScreen" value="true" />
@@ -3401,7 +3284,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719547" sideWeight="0.49676898" order="12" side_tool="false" content_ui="tabs" />
@@ -3411,19 +3294,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78045326" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78045326" sideWeight="0.49353796" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.503231" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3558,17 +3441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/Android-Bootstrap/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3607,17 +3479,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/gradient.jpg" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/gradient.png">
       <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_host.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
@@ -3695,9 +3556,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="71" selection-end-column="36" />
-          <folding>
-            <marker date="1507592135000" expanded="false" signature="978:997" ph="&quot;&quot;" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -3761,14 +3620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HostActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="66" column="84" selection-start-line="66" selection-start-column="84" selection-end-line="66" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/RoomActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -3788,10 +3639,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_join.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+        <state relative-caret-position="10">
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -3801,10 +3663,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/JoinActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="69">
+          <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/drewthoennes/split/HostActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_host.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="88" column="65" selection-start-line="88" selection-start-column="65" selection-end-line="88" selection-end-column="65" />
+          <folding>
+            <element signature="e#1408#1426#0" expanded="true" />
+            <element signature="e#2365#2381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>

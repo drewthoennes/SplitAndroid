@@ -73,13 +73,14 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingBottom="40dp">
 
         <TextView
             android:id="@+id/joinAccessCodeLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Access Code"
+            android:text="Access Code"
             android:textSize="24dp"
             android:gravity="center"
             android:imeOptions="actionDone"
