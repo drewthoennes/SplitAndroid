@@ -25,6 +25,7 @@ public class HostActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.left_slide_in, R.anim.left_slide_out);
         getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_host);
@@ -33,6 +34,7 @@ public class HostActivity extends AppCompatActivity {
 
         try {
             socket = IO.socket("http://elnardu.me");
+            //socket = IO.socket("https://aqueous-reaches-96453.herokuapp.com");
         } catch(Exception exception) {
             Log.e("Error", exception.getMessage()); // Temporary, shoud be removed in final release
             //System.exit(0);
@@ -62,9 +64,8 @@ public class HostActivity extends AppCompatActivity {
         backButton = (Button) findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent();
-                setResult(100, intent);
-                finish();
+                Intent homeIntent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(homeIntent);
             }
         });
 

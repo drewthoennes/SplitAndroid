@@ -1,65 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_room_top"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@drawable/landing_faded"
     tools:context="com.example.drewthoennes.split.HomeActivity">
 
+    <!-- Toolbar at top -->
     <LinearLayout
         android:id="@+id/toolbarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
 
-        <Button
-            android:id="@+id/endButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="End room"/>
+        <RelativeLayout
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_alignParentLeft="true"/>
+            -->
+            <TextView
+                android:id="@+id/times_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/fa_times"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="onClick"/>
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stretch_logo"
+                android:adjustViewBounds="true"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/settings_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/fa_cog"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="onClick"/>
+
+        </RelativeLayout>
     </LinearLayout>
+
+    <!-- Room code at top of screen -->
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:id="@+id/hostAccessCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:bootstrapBrand="secondary"
+        app:bootstrapHeading="h2"
+        app:roundedCorners="true"/>
 
     <LinearLayout
         android:id="@+id/accessCodeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
         android:layout_centerVertical="true"
         android:paddingBottom="10dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Access Code: "
-            android:gravity="center"
-            android:textSize="32dp"/>
-
-        <TextView
-            android:id="@+id/hostAccessCode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ROFL"
-            android:gravity="center"
-            android:textSize="32dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/userCountLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/accessCodeLayout"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:paddingTop="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,23 +95,36 @@
             android:gravity="center"
             android:textSize="32dp"/>
 
-        <TextView
+        <com.beardedhen.androidbootstrap.BootstrapLabel
             android:id="@+id/countUsersText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
-            android:gravity="center"
-            android:textSize="32dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"/>
+            android:text="Bootstrap Label"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:bootstrapBrand="secondary"
+            app:bootstrapHeading="h3"
+            app:roundedCorners="true"/>
 
     </LinearLayout>
 
-    <Button
+    <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/startVideoButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Play Video"
-        android:layout_alignParentBottom="true" />
+        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:showOutline="false"
+        app:roundedCorners="true" />
 
 </RelativeLayout>

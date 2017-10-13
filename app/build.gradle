@@ -35,4 +35,7 @@ dependencies {
         exclude group: 'org.json', module: 'json'
     }
     compile 'com.google.android.exoplayer:exoplayer:r2.5.2'
+    dependencies {
+        compile 'com.beardedhen:androidbootstrap:2.3.2'
+    }
 }
